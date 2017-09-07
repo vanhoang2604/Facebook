@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context="com.example.admin.android.MainActivity">
+
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/image_facebook" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_fb"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/roundbordertext"
+        android:hint="@string/hint_email_phone"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/roundbordertext"
+        android:hint="@string/hint_pass"
+        android:inputType="textPassword"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/roundborderbutton"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/btn_sign_up"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue_dark"
+        android:text=" ? "
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
